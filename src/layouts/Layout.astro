@@ -1,3 +1,7 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -11,7 +15,7 @@
 	<body>
 		<nav>
 			<div>
-                <h2>WorldStudios</h2>
+                <p>WorldStudios</p>
 			</div>
 			<div>
 				<a href="/">Home</a>
@@ -19,8 +23,26 @@
 				<a href="/products">Products</a>
 			</div>
 		</nav>
-
 		<slot />
+		<footer>
+			<div>
+				<p></p>
+				<div>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div>
+				<div>
+					<Icon name="facebook"/>
+					<Icon name="twitter"/>
+					<Icon name="pinterest"/>
+					<Icon name="instagram"/>
+				</div>
+				<p></p>
+			</div>
+		</footer>
 	</body>
 </html>
 
