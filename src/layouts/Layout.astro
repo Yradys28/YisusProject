@@ -1,5 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
+import NavBar from '../components/NavBar.astro'
+import Footer from '../components/Footer.astro'
+
 ---
 
 <!doctype html>
@@ -13,38 +16,9 @@ import { Icon } from 'astro-icon/components'
 		<title>WorldStudios</title>
 	</head>
 	<body>
-		<nav>
-			<div>
-                <p>WorldStudios</p>
-			</div>
-			<div>
-				<a href="/">Home</a>
-				<a href="/events">Events</a>
-				<a href="/products">Products</a>
-			</div>
-		</nav>
-
+		<NavBar></NavBar>
 	<slot />
-
-		<footer>
-			<div>
-				<p></p>
-				<div>
-					<a href=""></a>
-					<a href=""></a>
-					<a href=""></a>
-				</div>
-			</div>
-			<div>
-				<div>
-					<Icon name="facebook"/>
-					<Icon name="twitter"/>
-					<Icon name="pinterest"/>
-					<Icon name="instagram"/>
-				</div>
-				<p></p>
-			</div>
-		</footer>
+		<Footer></Footer>
 	</body>
 </html>
 
