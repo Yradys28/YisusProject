@@ -3,19 +3,55 @@ import Layout from "../layouts/Layout.astro"
 import Tarjetas from "../components/Tarjetas.astro"
 ---
 <Layout>
-   <section>
-        <img src="" alt="">
-        <div>
-            <h2>THE LEADER IN INTERACTIVE VR</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid culpa molestiae quos animi praesentium earum, dolor esse vel, quas id quaerat atque dolorum ipsam repudiandae illum cupiditate molestias facilis. Unde deleniti quod perferendis provident cum veniam, aliquid harum suscipit temporibus ex optio esse error! At maiores rerum in harum minus voluptates quasi aut ratione illum consequatur, aperiam atque assumenda natus!</p>
-        </div>
+    <img src="" alt="">
+   <section class="section1">
+            <img src="/images/desktop/image-interactive.jpg" alt="" class="imgS1">
+            <div class="infoS1">
+                <h2>THE LEADER IN INTERACTIVE VR</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid culpa molestiae quos animi praesentium earum, dolor esse vel, quas id quaerat atque dolorum ipsam repudiandae illum cupiditate molestias facilis.</p>
+            </div>
    </section>
 
-   <section>
-        <div>
+   <section class="section2">
+        <div class="buttonS2">
             <h1>OUR CREATION</h1>
             <button>SEE ALL</button>
+        </div>
+        <div>
             <Tarjetas />
         </div>
    </section>
 </Layout>
+
+<style>
+    .section1{
+        margin: 20px 120px 0px 120px;
+
+        display: flex ;
+        align-items: end;
+    }
+
+    .imgS1{
+        width: 70%;
+    }
+
+    .infoS1{
+        padding: 50px;
+    }
+
+    .infoS1 h2{
+        font-size: 40px;
+    }
+
+    .section2{
+        margin: 20px 120px 0px 120px;
+
+    }
+
+    .section2 .buttonS2{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+</style>
