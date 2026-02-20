@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro"
 import Tarjetas from "../components/Tarjetas.astro"
 ---
 <Layout>
-    <img src="" alt="">
+    <div class="main">
+        <p>IMMERSIVE EXPERIENCES THAT DELIVER</p>
+    </div>
    <section class="section1">
             <img src="/images/desktop/image-interactive.jpg" alt="" class="imgS1">
             <div class="infoS1">
@@ -14,18 +16,44 @@ import Tarjetas from "../components/Tarjetas.astro"
 
    <section class="section2">
         <div class="buttonS2">
-            <h1>OUR CREATION</h1>
-            <button>SEE ALL</button>
-        </div>
-        <div>
+            <h1>OUR CREATIONS</h1>
+            <button class="show-more">SEE ALL</button>
+        </div> 
+        <div class="tarjetas">
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
             <Tarjetas />
         </div>
    </section>
 </Layout>
 
 <style>
+    .main{
+       padding: 205px 120px;
+       background-image: url(/images/desktop/image-main.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+
+    .main p {
+        
+        font-size: 55px;
+        letter-spacing: 0.2rem;
+        line-height: 60px;
+        font-weight: 300;
+        color: white;
+        border: 3px solid white;
+        padding: 30px 40px 30px 30px;
+        max-width: 520px;
+    }
+
     .section1{
-        margin: 20px 120px 0px 120px;
+        margin: 20px 120px 120px 120px;
 
         display: flex ;
         align-items: end;
@@ -34,23 +62,52 @@ import Tarjetas from "../components/Tarjetas.astro"
     .imgS1{
         width: 70%;
     }
-
+    
     .infoS1{
         padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .infoS1 h2{
-        font-size: 40px;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 60px;
+    }
+
+    .infoS1 p{
+        font-weight: 400;
+        color: rgb(60, 60, 60);
     }
 
     .section2{
         margin: 20px 120px 0px 120px;
+        margin-bottom: 150px;
 
     }
 
     .section2 .buttonS2{
+        margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttonS2 h1{
+        letter-spacing: 0.3rem;
+        font-size: 40px;
+    }
+
+    .show-more{
+        border: 2px solid black;
+        padding: 5px 40px;
+    }
+
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
     
 
